@@ -1,6 +1,5 @@
 # Comparative Analysis of Deep Learning Models for Voxel-Based 3D Spatial Relation Operations
 
-![논문 제목과 저자](./assets/poster-sections/00-title-and-authors.png)
 
 ## Project Overview
 
@@ -23,7 +22,6 @@
 
 ## 1. Introduction
 
-![Introduction](./assets/poster-sections/01-introduction.png)
 
 Voxel은 3차원 공간을 규칙적인 grid로 표현하므로 occupancy, semantic information, height, risk 등의 정보를 cell 단위로 저장할 수 있습니다. 하지만 해상도가 높아질수록 데이터 크기가 급격히 증가하며, object boundary, interior/exterior, adjacency, connectivity 같은 관계를 고정된 수식과 규칙만으로 유연하게 처리하기 어렵습니다.
 
@@ -35,7 +33,6 @@ Voxel은 3차원 공간을 규칙적인 grid로 표현하므로 occupancy, seman
 
 ## 2. Dataset Construction
 
-![Dataset construction](./assets/poster-sections/02-dataset-construction.png)
 
 DE-9IM의 공간 관계 개념을 바탕으로 두 3D object를 `64 × 64 × 64` voxel grid에 생성했습니다.
 
@@ -65,7 +62,6 @@ DE-9IM의 공간 관계 개념을 바탕으로 두 3D object를 `64 × 64 × 64`
 
 ## 3. MLP and 3D CNN
 
-![MLP와 3D CNN](./assets/poster-sections/03-mlp-and-3d-cnn.png)
 
 ### MLP baseline
 
@@ -92,7 +88,6 @@ MLP는 입력을 1차원 vector로 flatten하므로 voxel 간 local adjacency를
 
 ## 4. Voxel Transformer
 
-![Voxel Transformer](./assets/poster-sections/04-voxel-transformer.png)
 
 - `64³` voxel grid를 `4 × 4 × 4` blocks로 분할
 - Non-empty block을 sparse token으로 변환
@@ -107,7 +102,6 @@ Voxel Transformer는 sparse voxel token 간의 단거리·장거리 관계를 at
 
 ## 5. Results and Discussion
 
-![결과와 분석](./assets/poster-sections/05-results-and-discussion.png)
 
 논문 본문의 전체 test-set 결과는 다음과 같습니다.
 
@@ -134,7 +128,6 @@ MLP는 특히 `Meet` sample을 `Disjoint`로 분류하는 오류가 많았습니
 
 ## 6. Conclusion
 
-![결론과 사사](./assets/poster-sections/06-conclusion-and-acknowledgement.png)
 
 - Voxel-based 3D spatial operation을 learning-based classification problem으로 구성할 수 있음을 확인했습니다.
 - 3D spatial structure를 명시적으로 보존하는 모델이 flattened MLP baseline보다 높은 성능을 보였습니다.
@@ -147,27 +140,4 @@ MLP는 특히 `Meet` sample을 `Disjoint`로 분류하는 오류가 많았습니
 - [완성 포스터 1면 PDF](./materials/KAIA-2026-poster.pdf)
 - [논문 PDF](./materials/KAIA-2026-paper.pdf)
 
-## Project Structure
 
-```text
-02-KAIA-2026-Voxel-Spatial-Relations/
-├── README.md
-├── assets/
-│   ├── poster-full.png
-│   └── poster-sections/
-│       ├── 00-title-and-authors.png
-│       ├── 01-introduction.png
-│       ├── 02-dataset-construction.png
-│       ├── 03-mlp-and-3d-cnn.png
-│       ├── 04-voxel-transformer.png
-│       ├── 05-results-and-discussion.png
-│       └── 06-conclusion-and-acknowledgement.png
-└── materials/
-    ├── KAIA-2026-paper.pdf
-    ├── KAIA-2026-poster.pdf
-    └── KAIA-2026-poster.pptx
-```
-
-## Reproducibility Note
-
-이 폴더는 논문·포스터와 검증된 결과를 정리한 학술 포트폴리오입니다. 원본 voxel dataset, model checkpoint 및 전체 3개 모델의 실행 가능한 source code는 포함하지 않았으므로, 확인되지 않은 실행 명령이나 재현 가능성을 임의로 주장하지 않습니다.
