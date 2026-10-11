@@ -1,0 +1,37 @@
+# OS and editor files
+.DS_Store
+Thumbs.db
+__MACOSX/
+~$*
+*.tmp
+*.log
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Python environments and caches
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+
+# Experiment artifacts that should not be committed
+data/
+datasets/
+checkpoints/
+weights/
+runs/
+wandb/
+mlruns/
+*.ckpt
+*.pth
+*.pt
+*.onnx
