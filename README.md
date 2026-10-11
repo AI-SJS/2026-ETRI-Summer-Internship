@@ -20,27 +20,6 @@
 - Voxel Transformer
 - Digital Twin 및 3D Spatial Information
 
-## Repository Structure
-
-```text
-.
-├── 01-KOREA-AI-2026-Voxel-Semantic-Segmentation/
-│   ├── README.md
-│   ├── assets/       # README에 사용한 핵심 발표 슬라이드
-│   └── materials/    # 논문, 원본 PPTX, GitHub 미리보기용 PDF
-├── 02-KAIA-2026-Voxel-Spatial-Relations/
-│   ├── README.md
-│   ├── assets/       # 전체 포스터 및 구역별 이미지
-│   └── materials/    # 논문, 원본 포스터 PPTX, 1면 포스터 PDF
-└── .gitignore
-```
-
-## Materials Policy
-
-- 이 저장소에는 연구 포트폴리오에 필요한 논문, 발표자료, 포스터와 설명용 이미지만 포함합니다.
-- 원본 dataset, model checkpoint, 실험 cache 및 대용량 중간 산출물은 포함하지 않습니다.
-- PDF 미리보기와 README 이미지는 원본 발표자료의 시각적 구성을 유지해 변환한 자료입니다.
-- 논문·발표자료의 저작권과 인용 권리는 각 저자, 학회 및 관련 기관의 정책을 따릅니다.
 
 ## Acknowledgement
 
