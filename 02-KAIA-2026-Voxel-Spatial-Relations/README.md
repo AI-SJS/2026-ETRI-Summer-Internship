@@ -17,7 +17,7 @@
 
 ## Poster Overview
 
-![전체 포스터](./assets/poster-full.png)
+![전체 포스터](./assets/poster-sections/poster-full.png)
 
 아래에서는 포스터를 연구 흐름에 따라 구역별로 나누어 설명합니다.
 
